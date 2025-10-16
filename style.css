@@ -1,0 +1,19 @@
+body {
+  margin: 20px;
+  padding: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 0, 179),
+    rgb(187, 0, 255)
+  );
+}
+
+h1 {
+  font-family: "Saira Semi Condensed", sans-serif;
+  color: white;
+}
+
+h6 {
+  font-family: "Saira Semi Condensed", sans-serif;
+  color: white;
+}
