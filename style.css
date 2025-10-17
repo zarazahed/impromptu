@@ -1,19 +1,81 @@
 body {
   margin: 20px;
   padding: 20px;
-  background-image: linear-gradient(
-    to right,
-    rgb(255, 0, 179),
-    rgb(187, 0, 255)
-  );
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(33, 32, 33));
+  box-sizing: border-box;
 }
 
 h1 {
-  font-family: "Saira Semi Condensed", sans-serif;
+  font-family: "SairaSemiCondensedThin", sans-serif;
+  color: white;
+}
+
+a {
+  cursor: pointer;
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgba(255, 255, 255, 0.604),
+    0 0 30px rgb(255, 255, 255);
   color: white;
 }
 
 h6 {
-  font-family: "Saira Semi Condensed", sans-serif;
+  font-family: "SairaSemiCondensedThin", sans-serif;
   color: white;
+}
+
+@font-face {
+  font-family: "SairaSemiCondensedThin";
+  src: url("fonts/SairaSemiCondensed-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+p {
+  font-family: "SairaSemiCondensedThin", sans-serif;
+  font-size: 35px;
+  color: white;
+  font-size: 15px;
+}
+
+.container {
+  width: 400px;
+  height: 450px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  display: flex;
+}
+
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: white;
+  color: black;
+}
+
+.back {
+  background-color: rgb(10, 95, 36);
+  color: rgb(150, 255, 166);
+  transform: rotateY(180deg);
+  text-shadow: 0 0 10px rgb(0, 255, 132), 0 0 20px rgba(0, 213, 255, 0.604),
+    0 0 30px rgb(162, 255, 0);
 }
