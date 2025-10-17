@@ -41,6 +41,8 @@ p {
   height: 450px;
   margin-right: 20px;
   margin-left: 20px;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -74,8 +76,8 @@ p {
 
 .back {
   background-color: rgb(10, 95, 36);
-  color: rgb(150, 255, 166);
+  color: rgb(255, 255, 255);
   transform: rotateY(180deg);
-  text-shadow: 0 0 10px rgb(0, 255, 132), 0 0 20px rgba(0, 213, 255, 0.604),
-    0 0 30px rgb(162, 255, 0);
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgba(255, 255, 255, 0.604),
+    0 0 30px rgb(255, 255, 255);
 }
