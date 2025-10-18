@@ -1,3 +1,7 @@
+* {
+  font-family: "SairaSemiCondensedThin", sans-serif;
+}
+
 body {
   margin: 20px;
   padding: 20px;
@@ -78,8 +82,19 @@ p {
   background-color: rgb(10, 95, 36);
   color: rgb(255, 255, 255);
   transform: rotateY(180deg);
-  .glowing-text {
-    color: #fff;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
-  }
+}
+
+.back > h1 {
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+button {
+  color: black;
+  background-color: white;
+  font-size: 15px;
+  border: none;
+  padding: 20px;
+  margin-left: 135px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
