@@ -78,6 +78,8 @@ p {
   background-color: rgb(10, 95, 36);
   color: rgb(255, 255, 255);
   transform: rotateY(180deg);
-  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgba(255, 255, 255, 0.604),
-    0 0 30px rgb(255, 255, 255);
+  .glowing-text {
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+  }
 }
